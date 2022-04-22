@@ -1,7 +1,7 @@
 # Semáforo
 
 Pequeno projeto desenvolvido para aprendizagem de manuseio da placa Arduino e seus componentes, além da programação do mesmo.
-Um simples projeto de um semáforo, onde foi utilizado:
+Um simples projeto de um semáforo, onde foram utilizados:
 
 - Placa Arduino UNO
 - 3 LEDs

@@ -3,12 +3,15 @@
 #define pinLEDAmarelo 3
 #define pinLEDVermelho 4
 
-//Definindo do tempo de espera para cada sinalização
+//Definindo o tempo de espera para cada sinalização
 #define tempoEsperaVerde 4500 //Em milisegundos
 #define tempoEsperaAmarelo 1500
 #define tempoEsperaVermelho 7000
 
 void setup() {
+
+  //Indicando o número das portas digitais
+  //E configurando-as como saída (OUTPUT)
   pinMode(pinLEDVerde, OUTPUT);
   pinMode(pinLEDAmarelo, OUTPUT);
   pinMode(pinLEDVermelho, OUTPUT);
