@@ -1,26 +1,36 @@
-#define pinVerde 2
-#define pinAmarelo 3
-#define pinVermelho 4
+//Definindo as portas para cada LED
+#define pinLEDVerde 2
+#define pinLEDAmarelo 3
+#define pinLEDVermelho 4
+
+//Definindo do tempo de espera para cada sinalização
+#define tempoEsperaVerde 4500 //Em milisegundos
+#define tempoEsperaAmarelo 1500
+#define tempoEsperaVermelho 7000
 
 void setup() {
-  pinMode(pinVerde, OUTPUT);
-  pinMode(pinAmarelo, OUTPUT);
-  pinMode(pinVermelho, OUTPUT);
+  pinMode(pinLEDVerde, OUTPUT);
+  pinMode(pinLEDAmarelo, OUTPUT);
+  pinMode(pinLEDVermelho, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(pinVerde, HIGH);
-  digitalWrite(pinAmarelo, LOW);
-  digitalWrite(pinVermelho, LOW);
-  delay(1000);
+
+  //Semáforo - Verde
+  digitalWrite(pinLEDVerde, HIGH);
+  digitalWrite(pinLEDAmarelo, LOW);
+  digitalWrite(pinLEDVermelho, LOW);
+  delay(tempoEsperaVerde);
   
-  digitalWrite(pinVerde, LOW);
-  digitalWrite(pinAmarelo, HIGH);
-  digitalWrite(pinVermelho, LOW);
-  delay(1000);
+  //Semáforo - Amarelo
+  digitalWrite(pinLEDVerde, LOW);
+  digitalWrite(pinLEDAmarelo, HIGH);
+  digitalWrite(pinLEDVermelho, LOW);
+  delay(tempoEsperaAmarelo);
   
-  digitalWrite(pinVerde,LOW);
-  digitalWrite(pinAmarelo, LOW);
-  digitalWrite(pinVermelho, HIGH);
-  delay(1000);
+  //Semáforo - Vermelho
+  digitalWrite(pinLEDVerde,LOW);
+  digitalWrite(pinLEDAmarelo, LOW);
+  digitalWrite(pinLEDVermelho, HIGH);
+  delay(tempoEsperaVermelho);
 }
