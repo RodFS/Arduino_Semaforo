@@ -1,5 +1,3 @@
 # Arduino_Semaforo
 
-<div>
-    <img aling="center" alt="circuito" src="C:\Users\rdgfe\OneDrive\Pictures\Circuito Semaforo.png">
-</div>
+![Circuito Semaforo](https://user-images.githubusercontent.com/91967016/164777133-4b27f6df-11c5-42f5-a232-1c445c26e841.png)
